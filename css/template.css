@@ -1,0 +1,216 @@
+/**
+    @media only screen and (min-width : 320px){
+ 
+    }
+ 
+    @media only screen and (min-width : 480px){
+ 
+    }
+ 
+    @media only screen and (min-width : 768px){
+ 
+    }
+ 
+    @media only screen and (min-width : 992px){
+ 
+    }
+ 
+    @media only screen and (min-width : 1200px){
+ 
+    }
+*/
+
+*,html,body,p,div,h1,h2,h3,h4,h5,footer,em,li,a,div {
+    font-family: 'Roboto Slab', sans-serif;
+}
+
+#top-container {
+    padding: 15px 20px 0px;
+    text-align: center;
+}
+
+h3#top-line {
+    padding: 15px 10px;
+    text-align: center;
+    background-color: #824ddb;
+    color: #fff;
+    margin-bottom: 0;
+}
+
+.content-template h2 {
+    margin: 2em 0 1em;
+}
+.content-template h3 {
+    margin: 2em 0 1em;
+}
+.content-template .updated-time {
+    margin-top: 2em;
+    font-size: 12px;
+    color: #999;
+}
+
+#hero-container {
+    position: relative;
+    background-color: rgb(225,231,232);
+    width: 100%;
+    display: block;
+    height: 400px;
+    overflow: hidden;
+    background-image: url(../images/hero_image.jpg);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: 831px 600px;
+}
+    @media only screen and (min-width : 768px){
+        #hero-container {
+            height: 600px;
+        }
+    }
+    #bombd-fused {
+        position: absolute;
+        width: 370px;
+        height: 401px;
+        bottom: -160px;
+        left:  -10%;
+    }
+        @media only screen and (min-width : 900px){
+            #bombd-fused {
+                bottom: -100px;
+                left:  60%;
+            }
+        }
+
+#hero-text {
+    position: relative;
+    background-color: #09bfa6;
+    color: #fff;
+    text-align: center;
+    padding: 35px 10px;
+}
+    #hero-text p {
+        color: #fff;
+        font-size: 36px;
+    }
+    @media only screen and (min-width : 900px){
+        #hero-text {
+            padding: 35px 0px;
+        }
+
+        #hero-text p {
+            width: 350px;
+            display: inline-block;
+            margin-right: -400px;
+        }
+    }
+
+    #iphone-bombd {
+        width: 295px;
+        height: 600px;
+    }
+        @media only screen and (min-width : 900px){
+            #iphone-bombd {
+                position: absolute;
+                left: 50%;
+                margin-left: -295px;
+                bottom: 20px;
+            }
+        }
+
+#get-it {
+    display: block;
+    margin: auto;
+}
+#get-it img {
+    margin-left: 15px;
+    margin-top: 15px;
+    width: 145px;
+    height: 45px;
+}
+    @media only screen and (min-width : 990px){
+        #get-it {
+            float: right !important;
+        }
+    }
+
+#bombd-logo {
+    width: 250px;
+    height: 89px;
+}
+    @media only screen and (min-width : 768px){
+        #bombd-logo {
+        }
+    }
+
+
+#what-is-bombd {
+    width: 300px;
+    height: 41px;
+}
+
+#main-text {
+    text-align: center;
+    font-size: 18px;
+    background-color: #ff5a94;
+    color: #fff;
+    padding: 25px 0;
+}
+    #main-text h2 {
+        margin-top: 0;
+        margin-bottom: 1em;
+    }
+    #main-text .blob {
+    }
+        @media only screen and (min-width : 900px) {
+            #main-text {
+            }
+            #main-text .blob {
+                display: inline-block;
+                width: 400px;
+            }
+        }
+
+.text-content {
+    padding: 0 1em;
+}
+        @media only screen and (min-width : 900px) {
+            .text-content {
+                padding: 0 3em;
+            }
+        }
+
+#terms ul {
+    margin-left: 0;
+    padding-left: 0;
+}
+#terms ul li {
+    list-style: none;
+    margin-bottom: 0.5em;
+}
+    #terms li span.subitem {
+        font-weight: bold;
+        padding-right: 5px;
+    }
+    #terms ul li ul,
+    #terms ul.bulleted {
+        margin-top: 1em;
+        margin-left: 1em;
+    }
+    #terms ul li ul li,
+    #terms ul.bulleted li {
+        list-style: disc;
+        margin-left: 1em;
+    }
+
+#bottom-bar {
+    background-color: #f3e637;
+    height: 5em;
+}
+
+footer {
+    text-align: center;
+    margin-bottom: 20px;
+    border-top: 1px solid #ccc;
+    padding-top: 10px;
+    color: #ccc;
+    font-size: 9px;
+}
