@@ -10,13 +10,14 @@
 
     <title>Bombd - Privacy Policy</title>
 
-    <!-- Bootstrap core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Roboto Slab as fallback -->
     <link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,700' rel='stylesheet' type='text/css'>
 
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
     <!-- Custom styles for this template -->
-    <link href="css/animate.css" rel="stylesheet">
-    <link href="css/template.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -26,12 +27,17 @@
   </head>
 
   <body class="content-template" id="privacy">
+    <div class="container-fluid">
+        <div id="top-navbar" class="row">
+            <div id="logo-row" class="col-md-6 col-xs-12">
+                <img src="images/bombd-logo.png" />
+            </div>
 
-    <div class="container" id="top-container">
-        <a href="/"><img src="images/bombd_logo.jpg" id="bombd-logo" /></a>
-    </div>
-
-    <h3 id="top-line">"Exploding on your mobile soon..."</h3>
+            <div id="launch-row" class="col-md-6 col-xs-12">
+                <button id="launching" class="btn btn-danger">Launching October</button>
+            </div>
+        </div>
+    </div><!-- /.container -->
 
     <section class="clearfix text-content">
         <h2>Privacy Policy</h2>
@@ -123,7 +129,10 @@
         <p class="updated-time">Last updated: 4th June, 2015</p>
     </section>
 
-    <footer><div class="container">Copyright &copy; 2015 Bomb'd Inc. All rights reseved. Patent pending.<br /><a href="privacy.html">Privacy Policy</a> | <a href="terms.html">Terms &amp; Conditions</a></div></footer>
+    <div id="content-footer">
+        Copyright &copy; 2015 Bomb'd Inc. All rights reseved. Patent pending.<br /><a href="privacy.html">Privacy Policy</a> | <a href="terms.html">Terms &amp; Conditions</a>
+    </div>
+
 
 
     <!-- Bootstrap core JavaScript
