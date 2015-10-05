@@ -68,9 +68,18 @@ body.content-template h3 {
         margin-top: 1.5em;
     }
 
+body.content-template#terms ul {
+    margin-left: 0;
+    padding-left: 0;
+}
+    body.content-template#terms ul li {
+        list-style-type: none;
+        margin-bottom: 1em;
+    }
+
 section,
 div#content-footer {
-    padding: 2em 4em 2em 2em;
+    padding: 2em 1em 2em 0.5em;
 }
 
 div#content-footer {
@@ -94,6 +103,7 @@ div#content-footer {
     #launch-row {
         margin-bottom: 25px;
     }
+
 }
 
 /* Extra Small Devices, Phones */ 
@@ -108,6 +118,12 @@ div#content-footer {
     div#hero-full {
         background-image: url(../images/hero.jpg);
     }
+
+    section,
+    div#content-footer {
+        padding: 2em 4em 2em 2em;
+    }
+
 }
 
 /* Medium Devices, Desktops */
