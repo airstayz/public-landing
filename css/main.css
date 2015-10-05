@@ -1,6 +1,10 @@
 @font-face {
     font-family: Museo;
-    src: url(../fonts/bttf.otf) format('opentype');
+    src: url(../fonts/Museo300-Regular.otf) format('opentype');
+}
+@font-face {
+    font-family: "Museo Bold";
+    src: url(../fonts/Museo500-Regular.otf) format('opentype');
 }
 
 *, html, body,
@@ -38,11 +42,13 @@ div#hero-full {
 }
 
 div#tagline-row {
+    font-family: "Museo Bold";
     text-align: center;
     color: #735aa6;
 }
     div#tagline-row span {
-	display: inline;
+        font-family: "Museo Bold";
+        display: inline;
     }
 
 div#footer {
