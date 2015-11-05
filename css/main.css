@@ -20,7 +20,7 @@ div#top-navbar {
     height: 115px;
 }
 
-button#launching.btn-danger {
+#launching.btn-danger {
     font-size: 18px;
     margin-top: 20px;
     padding: 8px 20px;
@@ -29,7 +29,7 @@ button#launching.btn-danger {
     border-color: #f05455;
 }
 
-button#launching.btn-danger:hover {
+#launching.btn-danger:hover {
     background-color: #c13c43;
     border-color: #c13c43;
 }
