@@ -1,0 +1,86 @@
+
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    
+    <title>Bomb'd - REAL Social Media. No filter.</title>
+    <script type="text/javascript" src="jquery.min.js"></script>
+    <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+        }
+        #pz-iframe {
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="pz-wrapper">
+        <iframe id="pz-iframe" src="about:blank" frameborder="0" scrolling="yes"></iframe>
+    </div>
+
+    <script type="text/javascript">
+        // Handle hash changes
+        $(function(){
+            function getUrl(base) {
+                var full = base;
+
+                if (window.location.search.length > 0) {
+                    var search = window.location.search;
+                    full += search;
+                }
+
+                if (window.location.hash.length > 0) {
+                    var hash = window.location.hash;
+                    
+                    full += hash;
+                }
+
+                return full;
+            }
+
+            // Prepare
+            var f = document.getElementById('pz-iframe');
+
+            // Set base url
+            var base = 'https://cm.peazie.com/campaigns/show/1963/2091/';
+            
+            function updateFrameSource () {
+                // Update frame's source
+                f.src = getUrl(base);
+            }
+            
+            // Bind the event.
+            if ("onhashchange" in window) {
+                window.onhashchange = function () {
+                    updateFrameSource();
+                }
+            } else {
+                var storedHash = window.location.hash;
+                window.setInterval(function () {
+                    if (window.location.hash != storedHash) {
+                        updateFrameSource();
+                    }
+                }, 100);
+            }
+            
+            // Listen for any events to come from descendent frame
+            function messageReceive(evt) {
+                $('body, html').animate({scrollTop: 0}, 200);
+            }
+            window.addEventListener('message', messageReceive, false);
+
+            // Update frame source
+            updateFrameSource();
+        });
+    </script>
+</body>
+</html>
